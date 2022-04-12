@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import WeatherForm from './components/WeatherForm';
 import WeatherInfoShow from './components/WeatherInfoShow';
@@ -37,10 +37,9 @@ function App() {
             setWeatherData(data);
             setGotData(true);
             const isDay = weatherData?.weather[0].icon?.includes('d');
-            setIsDay(isDay);
+            console.log(isDay);
         } catch (error) {
             console.log(error);
-            setGotData(false);
         }
     };
 
@@ -56,10 +55,16 @@ function App() {
                     fetchData={fetchData}
                 ></WeatherForm>
 
+                {/* {weatherData.length !== 0 && city ? (
+                    <WeatherInfoShow
+                        weatherData={weatherData}
+                    ></WeatherInfoShow>
+                ) : (
+                    ''
+                )} */}
                 <WeatherInfoShow
                     gotData={gotData}
                     weatherData={weatherData}
-                    isDay={isDay}
                 ></WeatherInfoShow>
             </div>
             <footer>

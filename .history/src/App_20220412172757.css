@@ -59,8 +59,7 @@
 .app .app-container .weather-info-show {
     background-color: #ffffff;
     width: 78%;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border: 2px solid rgb(17, 13, 13);
     margin: 1rem auto;
     border-radius: 1rem;
     padding: 1.6rem;
@@ -74,32 +73,11 @@
     width: 50px;
     height: 50px;
 }
-.app .app-container .weather-info-show .main-info .info .location {
-    font-size: 1.4rem;
-    color: #52525b;
-}
-.app .app-container .weather-info-show .main-info .info .data {
-    font-size: 0.9rem;
-    color: #71717a;
-}
-.app .app-container .weather-info-show .main-info .info .data .large {
-    font-size: 1.4rem;
-    color: #52525b;
-}
-
-.app .app-container .weather-info-show hr {
-    width: 50%;
-    margin: 1.6rem auto;
-}
 
 .app .app-container .weather-info-show .other-info {
     display: flex;
     flex-direction: column;
 }
-.app .app-container .weather-info-show .other-info p {
-    color: #3f3f46;
-}
-
 .app .app-container .weather-info-show .other-info .other-info-data {
     display: grid;
 
@@ -149,57 +127,10 @@
     .sub-info
     .sub-info-title {
     color: #3f3f46;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .app footer p {
     text-align: center;
     font-size: 0.6rem;
-}
-
-@media only screen and (min-width: 500px) {
-    .app {
-        background-color: #eeeff4;
-        height: 100%;
-        padding: 1.5rem;
-    }
-
-    .app .app-container {
-        width: 400px;
-        margin: 2rem auto;
-        background: #ffffff;
-        border-radius: 2rem;
-        padding: 1rem 0;
-    }
-
-    .app footer p {
-        text-align: center;
-        margin: 0 auto;
-        width: 450px;
-        font-size: 0.6rem;
-        background: #eeeff4;
-    }
-}
-@media only screen and (min-width: 1300px) {
-    .app {
-        background-color: #eeeff4;
-        height: 100vh;
-        padding: 1.5rem;
-    }
-
-    .app .app-container {
-        width: 450px;
-        margin: 2rem auto;
-        background: #ffffff;
-        border-radius: 2rem;
-        padding: 1rem 0;
-    }
-
-    .app footer p {
-        text-align: center;
-        margin: 0 auto;
-        width: 450px;
-        font-size: 0.6rem;
-        background: #eeeff4;
-    }
 }

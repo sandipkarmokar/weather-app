@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import WeatherForm from './components/WeatherForm';
 import WeatherInfoShow from './components/WeatherInfoShow';
@@ -40,7 +40,6 @@ function App() {
             setIsDay(isDay);
         } catch (error) {
             console.log(error);
-            setGotData(false);
         }
     };
 

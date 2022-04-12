@@ -19,7 +19,7 @@ export const WeatherIcons = {
     '11d': '../icons/storm.svg',
     '11n': '../icons/storm.svg',
 };
-
+.
 function App() {
     const [city, setCity] = useState('');
     const [gotData, setGotData] = useState(false);

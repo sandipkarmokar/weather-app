@@ -160,8 +160,6 @@
 @media only screen and (min-width: 500px) {
     .app {
         background-color: #eeeff4;
-        height: 100%;
-        padding: 1.5rem;
     }
 
     .app .app-container {
@@ -170,36 +168,5 @@
         background: #ffffff;
         border-radius: 2rem;
         padding: 1rem 0;
-    }
-
-    .app footer p {
-        text-align: center;
-        margin: 0 auto;
-        width: 450px;
-        font-size: 0.6rem;
-        background: #eeeff4;
-    }
-}
-@media only screen and (min-width: 1300px) {
-    .app {
-        background-color: #eeeff4;
-        height: 100vh;
-        padding: 1.5rem;
-    }
-
-    .app .app-container {
-        width: 450px;
-        margin: 2rem auto;
-        background: #ffffff;
-        border-radius: 2rem;
-        padding: 1rem 0;
-    }
-
-    .app footer p {
-        text-align: center;
-        margin: 0 auto;
-        width: 450px;
-        font-size: 0.6rem;
-        background: #eeeff4;
     }
 }

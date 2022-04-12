@@ -1,24 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import WeatherForm from './components/WeatherForm';
 import WeatherInfoShow from './components/WeatherInfoShow';
-
-export const WeatherIcons = {
-    '01d': '../icons/sunny.svg',
-    '01n': '../icons/night.svg',
-    '02d': '../icons/day.svg',
-    '02n': '../icons/cloudy-night.svg',
-    '03d': '../icons/cloudy.svg',
-    '03n': '../icons/cloudy.svg',
-    '04d': '../icons/perfect-day.svg',
-    '04n': '../icons/cloudy-night.svg',
-    '09d': '../icons/rain.svg',
-    '09n': '../icons/rain-night.svg',
-    '10d': '../icons/rain.svg',
-    '10n': '../icons/rain-night.svg',
-    '11d': '../icons/storm.svg',
-    '11n': '../icons/storm.svg',
-};
 
 function App() {
     const [city, setCity] = useState('');
@@ -40,7 +23,6 @@ function App() {
             setIsDay(isDay);
         } catch (error) {
             console.log(error);
-            setGotData(false);
         }
     };
 
