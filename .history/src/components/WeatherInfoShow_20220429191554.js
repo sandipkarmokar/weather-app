@@ -32,7 +32,6 @@ const WeatherInfoShow = ({ weatherData, gotData, isDay }) => {
                         </div>
 
                         <img
-                            className="hidden"
                             src={WeatherIcons[weatherData?.weather[0].icon]}
                             alt="no icons"
                         />

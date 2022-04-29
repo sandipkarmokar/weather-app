@@ -5,10 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.hidden {
-    visibility: hidden;
-}
-
 .app {
     background-color: #eeeff4;
     height: 100vh;
@@ -156,7 +152,7 @@
     font-size: 0.8rem;
 }
 
-.app footer {
+.app footer p {
     text-align: center;
     font-size: 0.6rem;
 }

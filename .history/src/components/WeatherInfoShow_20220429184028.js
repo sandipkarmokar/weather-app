@@ -1,5 +1,5 @@
 import React from 'react';
-import { WeatherIcons } from '../App';
+// import { WeatherIcons } from '../App';
 
 import sunset from '../icons/temp.svg';
 import sunrise from '../icons/temp.svg';
@@ -7,13 +7,33 @@ import humidity from '../icons/humidity.svg';
 import wind from '../icons/wind.svg';
 import pressure from '../icons/pressure.svg';
 
+const WeatherIcons = {
+    '01d': '../icons/sunny.svg',
+    '01n': '../icons/night.svg',
+    '02d': '../icons/day.svg',
+    '02n': '../icons/cloudy-night.svg',
+    '03d': '../icons/cloudy.svg',
+    '03n': '../icons/cloudy.svg',
+    '04d': '../icons/perfect-day.svg',
+    '04n': '../icons/cloudy-night.svg',
+    '09d': '../icons/rain.svg',
+    '09n': '../icons/rain-night.svg',
+    '10d': '../icons/rain.svg',
+    '10n': '../icons/rain-night.svg',
+    '11d': '../icons/storm.svg',
+    '11n': '../icons/storm.svg',
+};
+
+console.log(WeatherIcons.01d, 'hello');
+
 const WeatherInfoShow = ({ weatherData, gotData, isDay }) => {
+    console.log(WeatherIcons['01d']);
     const getTime = (timeStamp) => {
         return `${new Date(timeStamp * 1000).getHours()}:${new Date(
             timeStamp * 1000
         ).getMinutes()}`;
     };
-
+   
     return (
         <div className="weather-info-show">
             {gotData ? (
@@ -30,9 +50,8 @@ const WeatherInfoShow = ({ weatherData, gotData, isDay }) => {
                                 | {weatherData?.weather[0].description}
                             </div>
                         </div>
-
+                        <img src="../components/" alt="thus soke" />
                         <img
-                            className="hidden"
                             src={WeatherIcons[weatherData?.weather[0].icon]}
                             alt="no icons"
                         />

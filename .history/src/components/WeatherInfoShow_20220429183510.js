@@ -7,13 +7,16 @@ import humidity from '../icons/humidity.svg';
 import wind from '../icons/wind.svg';
 import pressure from '../icons/pressure.svg';
 
+console.log(WeatherIcons, 'hello');
+
 const WeatherInfoShow = ({ weatherData, gotData, isDay }) => {
+    console.log(WeatherIcons['01d']);
     const getTime = (timeStamp) => {
         return `${new Date(timeStamp * 1000).getHours()}:${new Date(
             timeStamp * 1000
         ).getMinutes()}`;
     };
-
+    console.log(weatherData);
     return (
         <div className="weather-info-show">
             {gotData ? (
@@ -30,9 +33,8 @@ const WeatherInfoShow = ({ weatherData, gotData, isDay }) => {
                                 | {weatherData?.weather[0].description}
                             </div>
                         </div>
-
+                        <img src={imagex} alt="thus soke" />
                         <img
-                            className="hidden"
                             src={WeatherIcons[weatherData?.weather[0].icon]}
                             alt="no icons"
                         />

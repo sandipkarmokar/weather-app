@@ -4,20 +4,20 @@ import WeatherForm from './components/WeatherForm';
 import WeatherInfoShow from './components/WeatherInfoShow';
 
 export const WeatherIcons = {
-    '01d': '/src/icons/sunny.svg',
-    '01n': '/src/icons/night.svg',
-    '02d': '/src/icons/day.svg',
-    '02n': '/src/icons/cloudy-night.svg',
-    '03d': '/src/icons/cloudy.svg',
-    '03n': '/src/icons/cloudy.svg',
-    '04d': '/src/icons/perfect-day.svg',
-    '04n': '/src/icons/cloudy-night.svg',
-    '09d': '/src/icons/rain.svg',
-    '09n': '/src/icons/rain-night.svg',
-    '10d': '/src/icons/rain.svg',
-    '10n': '/src/icons/rain-night.svg',
-    '11d': '/src/icons/storm.svg',
-    '11n': '/src/icons/storm.svg',
+    '01d': '../icons/sunny.svg',
+    '01n': '../icons/night.svg',
+    '02d': '../icons/day.svg',
+    '02n': '../icons/cloudy-night.svg',
+    '03d': '../icons/cloudy.svg',
+    '03n': '../icons/cloudy.svg',
+    '04d': '../icons/perfect-day.svg',
+    '04n': '../icons/cloudy-night.svg',
+    '09d': '../icons/rain.svg',
+    '09n': '../icons/rain-night.svg',
+    '10d': '../icons/rain.svg',
+    '10n': '../icons/rain-night.svg',
+    '11d': '../icons/storm.svg',
+    '11n': '../icons/storm.svg',
 };
 
 function App() {

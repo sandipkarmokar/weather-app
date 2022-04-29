@@ -5,10 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.hidden {
-    visibility: hidden;
-}
-
 .app {
     background-color: #eeeff4;
     height: 100vh;
@@ -161,6 +157,15 @@
     font-size: 0.6rem;
 }
 
+.app footer a {
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    font-size: 0.6rem;
+    background: #eeeff4;
+    color: #3f3f46;
+}
+
 @media only screen and (min-width: 500px) {
     .app {
         background-color: #eeeff4;
@@ -205,5 +210,13 @@
         width: 450px;
         font-size: 0.6rem;
         background: #eeeff4;
+    }
+    .app footer a {
+        text-align: center;
+        margin: 0 auto;
+        width: 450px;
+        font-size: 0.6rem;
+        background: #eeeff4;
+        color: #3f3f46;
     }
 }
